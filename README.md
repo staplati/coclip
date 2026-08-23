@@ -1,4 +1,4 @@
-https://github.com/user-attachments/assets/b80e01cd-57db-44fb-91fb-96b3a9045f8c
+<img width="500" alt="coclip" src="https://github.com/user-attachments/assets/4ad9102b-5057-48d5-8212-4102a2310e6e" />
 
 ## 简介
 
