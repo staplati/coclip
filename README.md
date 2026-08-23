@@ -1,3 +1,5 @@
+https://github.com/user-attachments/assets/b80e01cd-57db-44fb-91fb-96b3a9045f8c
+
 ## 简介
 
 coclip 是一个 Chrome 剪贴板查询扩展。按下 `Alt+X` 后，它会在唯一的独立窗口中读取剪贴板文字或图片，并行调用多个 OpenAI-compatible API，以可折叠 Markdown 卡片展示结果。
