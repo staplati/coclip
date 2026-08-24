@@ -8,7 +8,7 @@ coclip 是一个 Chrome 剪贴板查询扩展。按下 `Alt+X` 后，它会在�
 
 扩展只使用剪贴板、内部存储和右键菜单权限，不读取网页内容，也不声明 API 域名访问权限。API 服务需要正确配置 CORS。
 
-添加 ClipboardAction.exe：Ctrl+F1 (snipaste截图并复制) → 监听剪贴板 10 秒 → 有变化则按 Alt+X (coclip查询)
+添加 ClipboardAction.exe，可用于 Logi Options+：Ctrl+F1 (snipaste截图并复制) → 监听剪贴板 10 秒 → 有变化则按 Alt+X (coclip查询)
 
 ## What coclip does
 
