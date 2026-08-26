@@ -6,10 +6,6 @@ v2.5 baseline
 
 ---
 
-添加 ClipboardAction.exe，可用于 Logi Options+：Ctrl+F1 (snipaste截图并复制) → 监听剪贴板 10 秒 → 有变化则按 Alt+X (coclip查询)
-
----
-
 v2.6 添加按钮显示/隐藏API卡片，添加按钮显示/隐藏Input卡片，添加按钮显示/隐藏顶部跳转按钮
 
 ## 简介
