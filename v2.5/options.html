@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title data-i18n="optionsTitle">coclip — Settings</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main class="page">
+      <header class="page-header">
+        <div class="wordmark" aria-label="coclip">coclip<span>.</span></div>
+        <h1 data-i18n="settings">Settings</h1>
+      </header>
+
+      <section class="preferences" aria-labelledby="preferencesTitle">
+        <h2 id="preferencesTitle" data-i18n="preferences">Preferences</h2>
+        <div class="preference-grid">
+          <label class="select-field">
+            <span data-i18n="language">Language</span>
+            <select id="languageSelect">
+              <option value="en" data-i18n="languageEnglish">English</option>
+              <option value="zh-CN" data-i18n="languageChinese">中文</option>
+            </select>
+          </label>
+          <label class="select-field">
+            <span data-i18n="actionClick">Toolbar click</span>
+            <select id="actionClickSelect">
+              <option value="query-clipboard" data-i18n="actionQuery">Query clipboard</option>
+              <option value="open-options" data-i18n="actionOptions">Open settings</option>
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <section class="api-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="apiList">API LIST</p>
+            <h2 data-i18n="apiConfiguration">API configuration</h2>
+          </div>
+          <button id="addApiButton" class="button button-secondary" type="button" data-i18n="addApi">+ Add API</button>
+        </div>
+        <div id="apiList" class="api-list"></div>
+      </section>
+
+      <div id="statusMessage" class="status-message" hidden aria-live="polite"></div>
+
+      <footer class="save-bar">
+        <button id="shortcutButton" class="shortcut-link" type="button" data-i18n="shortcuts">Keyboard shortcuts ↗</button>
+        <button id="saveButton" class="button button-primary" type="button" data-i18n="saveSettings">Save settings</button>
+      </footer>
+    </main>
+
+    <template id="apiTemplate">
+      <section class="api-card">
+        <div class="api-card-header">
+          <div class="api-identity">
+            <strong class="api-title">Untitled</strong>
+            <span class="api-host">Not configured</span>
+          </div>
+          <span class="api-state" hidden></span>
+          <div class="order-actions">
+            <button class="test-api" type="button" data-i18n="test">Test</button>
+            <button class="icon-button move-up" type="button" data-i18n-title="moveUp" data-i18n-aria-label="moveUp">↑</button>
+            <button class="icon-button move-down" type="button" data-i18n-title="moveDown" data-i18n-aria-label="moveDown">↓</button>
+            <button class="icon-button remove-api" type="button" data-i18n-title="remove" data-i18n-aria-label="remove">×</button>
+          </div>
+        </div>
+
+        <div class="api-card-body">
+          <div class="field-grid">
+            <div class="field">
+              <label data-i18n="displayName">Display name</label>
+              <input class="display-name" type="text" required data-i18n-placeholder="displayNamePlaceholder" placeholder="e.g. Fast model">
+            </div>
+            <div class="field">
+              <label data-i18n="modelId">Model ID</label>
+              <input class="model-id" type="text" required spellcheck="false" data-i18n-placeholder="modelIdPlaceholder" placeholder="Model ID">
+            </div>
+            <div class="field">
+              <label data-i18n="apiUrl">API URL</label>
+              <input class="api-url" type="url" required spellcheck="false" placeholder="https://api.example.com/v1">
+            </div>
+            <div class="field">
+              <label data-i18n="apiKey">API Key</label>
+              <div class="secret-field">
+                <input class="api-key" type="password" autocomplete="off" spellcheck="false" data-i18n-placeholder="apiKeyOptional" placeholder="Optional">
+                <button class="reveal-key" type="button" data-i18n="show">Show</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="field prompt-field">
+            <label data-i18n="prompt">Prompt</label>
+            <textarea class="api-prompt" rows="2" required></textarea>
+          </div>
+
+          <label class="image-support">
+            <input class="supports-images" type="checkbox">
+            <i class="switch" aria-hidden="true"></i>
+            <span data-i18n="supportsImages">Supports image input</span>
+          </label>
+          <div class="api-test-message" hidden></div>
+        </div>
+      </section>
+    </template>
+
+    <script type="module" src="options.js"></script>
+  </body>
+</html>
