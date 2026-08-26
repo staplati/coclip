@@ -1,15 +1,5 @@
 <img width="500" alt="coclip" src="https://github.com/user-attachments/assets/4ad9102b-5057-48d5-8212-4102a2310e6e" />
 
-## 简介
-
-coclip 是一个 Chrome 剪贴板查询扩展。按下 `Alt+X` 后，它会在唯一的独立窗口中读取剪贴板文字或图片，并行调用多个 OpenAI-compatible API，以可折叠 Markdown 卡片展示结果。
-
-每个 API 可以分别设置显示名称、API URL、API Key、Model ID、Prompt 和图片输入支持。设置页支持上下移动卡片；独立窗口会保留已有结果，并自动查询新加入的 API。
-
-扩展只使用剪贴板、内部存储和右键菜单权限，不读取网页内容，也不声明 API 域名访问权限。API 服务需要正确配置 CORS。
-
-
-
 ## Update
 
 v2.5 baseline
@@ -21,6 +11,14 @@ v2.5 baseline
 ---
 
 v2.6 添加按钮显示/隐藏API卡片，添加按钮显示/隐藏Input卡片，添加按钮显示/隐藏顶部跳转按钮
+
+## 简介
+
+coclip 是一个 Chrome 剪贴板查询扩展。按下 `Alt+X` 后，它会在唯一的独立窗口中读取剪贴板文字或图片，并行调用多个 OpenAI-compatible API，以可折叠 Markdown 卡片展示结果。
+
+每个 API 可以分别设置显示名称、API URL、API Key、Model ID、Prompt 和图片输入支持。设置页支持上下移动卡片；独立窗口会保留已有结果，并自动查询新加入的 API。
+
+扩展只使用剪贴板、内部存储和右键菜单权限，不读取网页内容，也不声明 API 域名访问权限。API 服务需要正确配置 CORS。
 
 ## What coclip does
 
